@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0 auto; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.content-wrap {
+  width: 1000px;
+  padding: 0 25px;
+  margin: 0 auto; }
+
+.main-header {
+  min-height: 110px;
+  background: url(../img/header-back.png) repeat-x 0 0;
+  padding: 20px 0 20px 0; }
+  .main-header .logo {
+    float: left; }
+  .main-header .search-wrap {
+    margin: 20px 0 0 0;
+    width: 240px;
+    float: right;
+    position: relative;
+    height: 28px; }
+    .main-header .search-wrap input[type="search"] {
+      border-radius: 4px;
+      width: 240px;
+      padding: 0 75px 0 10px;
+      height: 100%; }
+    .main-header .search-wrap input[type="submit"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 4px;
+      background: linear-gradient(to bottom, #00c2e9, #0095d5);
+      border: none;
+      outline: none;
+      width: 75px;
+      height: 100%;
+      font: bold 13px/1 Arial, Helvetica, sans-serif;
+      color: #fff;
+      cursor: pointer; }
+
+.main-menu {
+  min-height: 50px;
+  background: linear-gradient(to bottom, #009cc8, #00b0e2);
+  text-align: left; }
+  .main-menu .flex-container {
+    display: flex;
+    justify-content: space-around; }
+    .main-menu .flex-container a {
+      text-decoration: none;
+      color: #fff;
+      font: bold 14px/50px Arial, Helvetica, sans-serif;
+      text-align: center;
+      z-index: 1;
+      position: relative; }
+      .main-menu .flex-container a::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: -17px;
+        background: linear-gradient(to bottom, #1a1a1a, #333);
+        z-index: -1;
+        padding: 0 17px;
+        border-radius: 0 0 5px 5px;
+        display: none; }
+      .main-menu .flex-container a:hover::before {
+        display: block; }
+
+main {
+  border-top: 1px solid #fff;
+  padding: 25px 0;
+  background: linear-gradient(to bottom, #e1e1e1 70px, #eee); }
+  main h1 {
+    font: bold 44px/1 'Patua One';
+    background: linear-gradient(to bottom, #606060, #000);
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 20px 0;
+    padding: 0; }
+  main .products-wrap {
+    margin-right: -30px;
+    width: 100%;
+    padding: 0;
+    padding: 0; }
+    main .products-wrap .product {
+      width: 32.3%;
+      display: inline-block;
+      font-size: 0;
+      vertical-align: top;
+      margin: 0 10px 0 0;
+      height: 200px;
+      padding: 0;
+      background: red; }
+      main .products-wrap .product:nth-child(3n) {
+        margin-right: 0; }
